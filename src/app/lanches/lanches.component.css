@@ -1,0 +1,75 @@
+.foods{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1300px;
+}
+#title-cardapio{
+    margin: 150px 0px 0px 35px;
+    font-weight: bold;
+}
+#subtitle-cardapio{
+    margin: 0px 35px;
+    font-size: 18px;
+}
+
+li{
+    list-style-type: none;
+    padding: 30px;
+}
+.lanche-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    border: none;
+    margin: 0 30px;
+    background-color: #fff;
+}
+.lanche-btn:hover{
+    cursor: pointer;
+    border: 2px solid #DCDCDC;
+    border-radius: 25px;
+}
+.lanche-btn h1{
+    margin: 0;
+    font-size: 25px;
+    font-weight: bold;
+}
+.lanche-btn p{
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #4F4F4F;
+}
+.lanche-btn img{
+    align-self: center;
+    width: 250px;
+    height: 250px;
+}
+
+#btn-edit{
+    align-self: flex-end;
+}
+.edit-container{
+    display: flex;
+    flex-direction: column;
+}
+.edit-container input{
+    border: none;
+    border-bottom: 2px solid #DCDCDC;
+    color: #808080;
+    padding: 10px;
+    margin: 0;
+   
+}
+.edit-container label{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
