@@ -1,9 +1,12 @@
-<h1 id="title-cardapio">Cardapio</h1>
-<p id="subtitle-cardapio">Clique sobre os itens para edita-los</p>
+<div class="title-container">
+  <h1>Cardapio</h1>
+  <p>Clique sobre os itens para edita-los</p>
+</div>
+
 <ul class="foods">
   <li *ngFor="let food of foods">
     <button class="lanche-btn" [class.selected]="food === selectedFood" type="button" (click)="onSelect(food)" data-toggle="modal" data-target="#exampleModal">
-      <img src="./../../assets/img01.png">
+      <img src={{food.image}}>
       <h1 class="name">{{food.name}}</h1>
       <p class="name">{{food.price | currency : 'BRL'}}</p>
     </button>
@@ -30,6 +33,8 @@
                 <input id="food-ingredientes" [(ngModel)]="selectedFood.ingredientes" placeholder="ingredientes">
                 <label for="food-acompanhamentos">Acompanhamentos: </label>
                 <input id="food-acompanhamentos" [(ngModel)]="selectedFood.acompanhamentos" placeholder="acompanhamentos">
+                <label for="food-image">Imagem(Utilize URL): </label>
+                <input id="food-image" [(ngModel)]="selectedFood.image" placeholder="image">
               </div>
             </div>
         </div>

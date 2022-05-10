@@ -1,18 +1,19 @@
+.title-container{
+    margin: 100px 150px 0px 150px;
+}
+.title-container h1{
+    font-weight: bold;
+}
+.title-container{
+    font-size: 18px;
+}
 .foods{
-    display: flex;
-    flex-direction: row;
+    display: grid;
     justify-content: space-around;
     flex-wrap: wrap;
     margin: 0 auto;
-    max-width: 1300px;
-}
-#title-cardapio{
-    margin: 150px 0px 0px 35px;
-    font-weight: bold;
-}
-#subtitle-cardapio{
-    margin: 0px 35px;
-    font-size: 18px;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1600px;
 }
 
 li{
@@ -23,11 +24,9 @@ li{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 20px;
     width: 300px;
     height: 300px;
     border: none;
-    margin: 0 30px;
     background-color: #fff;
 }
 .lanche-btn:hover{
@@ -50,6 +49,8 @@ li{
     align-self: center;
     width: 250px;
     height: 250px;
+    max-width: 290px;
+    max-height: 290px;
 }
 
 #btn-edit{

@@ -3,5 +3,6 @@ export interface Food{
      name: string,
      price: number;
      ingredientes: Array<string>,
-     acompanhamentos: string,
+     acompanhamentos: Array<string>,
+     image?: String
 }
